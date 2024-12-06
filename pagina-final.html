@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns - Rastro do ShadowByte</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f05736;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+            animation: fadeIn 2s; /* Animação para o título */
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .flag {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            font-size: 18px;
+            font-weight: bold;
+            color: #f05736;
+            animation: glow 1.5s infinite; /* Efeito de brilho */
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #f05736; }
+            50% { box-shadow: 0 0 20px #f05736; }
+            100% { box-shadow: 0 0 5px #f05736; }
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #f05736;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #d14e2f;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parabéns!</h1>
+    </header>
+    <main>
+        <p>Você decifrou a mensagem criptografada e completou o desafio!</p>
+        <p>Aqui está a sua bandeira (FLAG):</p>
+        <div class="flag">FLAG{CyberSecurityGirls_H2HC}</div>
+        <p>Obrigado por participar do desafio da Cybersecurity Girls e H2HC!</p>
+        <a href="index.html">Voltar ao Início</a>
+    </main>
+    <footer>
+        <p>Desafio organizado pela Cybersecurity Girls e H2HC | H2HC 2024</p>
+    </footer>
+</body>
+</html>

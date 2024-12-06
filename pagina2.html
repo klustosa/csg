@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Criptografada - Rastro do ShadowByte</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        header {
+            background-color: #f05736;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            margin: 20px auto; /* Centraliza com mais espaçamento */
+            transition: all 0.3s;
+        }
+
+        .code:hover {
+            background-color: #ffe6e0; /* Destaque ao passar o mouse */
+            border-color: #f05736;
+        }
+
+        input {
+            margin-top: 20px;
+            padding: 10px;
+            width: 60%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #f05736;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d14e2f;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mensagem Criptografada</h1>
+    </header>
+    <main>
+        <p>O grupo ShadowByte deixou a seguinte mensagem criptografada. Decifre para descobrir o próximo passo:</p>
+        <div class="code">SGVsbG8sIEhCMkhD</div>
+        <p>Dica: Está codificado em Base64.</p>
+
+        <!-- Campo para o participante inserir a resposta -->
+        <input type="text" id="answer" placeholder="Digite sua resposta">
+        <button onclick="checkAnswer()">Enviar</button>
+    </main>
+    <footer>
+        <p>Desafio organizado pela Cybersecurity Girls e H2HC | H2HC 2024</p>
+    </footer>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value;
+            if (answer.trim() === "Hello, H2HC!") { // Resposta correta
+                window.location.href = "pagina-final.html";
+            } else {
+                alert("Resposta incorreta! Tente novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
